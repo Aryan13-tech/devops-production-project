@@ -22,9 +22,13 @@ jobs:
           cd backend
           npm install
 
-      - name: Start Server and Test
+      - name: Run Backend Test
         run: |
           cd backend
           node server.js &
           sleep 5
           curl -f http://localhost:5000 || exit 1
+
+      - name: Build Docker Image
+        run: |
+          docker build -t devops-backend -f docker/Dockerfile .
