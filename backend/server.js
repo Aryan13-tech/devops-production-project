@@ -7,7 +7,7 @@ app.use(cors());
 const PORT = process.env.PORT || 5000;
 
 app.get("/", (req, res) => {
-  res.send("DevOps Backend Running 🚀");
+  res.send("this is the updated message from me!");
 });
 
 app.get("/api/status", (req, res) => {
