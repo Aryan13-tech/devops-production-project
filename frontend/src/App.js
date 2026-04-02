@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div style={{ textAlign: "center", marginTop: "50px" }}>
-      <h1>🚀 DevOps Full Stack Project</h1>
+      <h1>DevOps Full Stack Project</h1>
       <p>{status}</p>
     </div>
   );
